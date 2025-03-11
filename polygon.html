@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N-Sided Polygon</title>
+    <link rel="stylesheet" href="polygon.css">
+    <link rel="icon" type="image/svg+xml" href="PolgyonLogo.svg">
+</head>
+<body>
+    <canvas id="canvas" width="500" height="500" style="border: 2px solid black; border-radius: 10px;"></canvas>
+    <br>
+    <div id="buttons">
+        <button id="clear" class = "buttons" onClick="clearCanvas()">Clear</button>
+        <input type="number" min="3" max="360" id="num" class="buttons">
+        <button type="submit" id="submit" class="buttons" onclick="drawPolygon()">Submit</button>
+        <br><br>
+        <label id="label" class="buttons">
+            <input type="checkbox" id="noPolygon" class="buttons">No Polygon</button>
+        </label>
+        <br>
+        <p id="name"></p>
+    </div>
+    <script src="polygon.js"></script>
+    
+</body>
+</html>
